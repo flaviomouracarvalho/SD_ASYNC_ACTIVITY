@@ -10,6 +10,12 @@
         const object = await response.json();
         document.querySelector("#dados").innerHTML = JSON.stringify(object);
     }
-    request()
-    document.querySelector("#mensagem").innerHTML = "<h1>Dados obtidos do servidor!</h2>"
+    function mensagem(){
+        document.querySelector("#mensagem").innerHTML = "<h2>Dados obtidos do servidor!</h2>"
+    }
+    async function principal(){
+        await request();
+        mensagem();
+    }
+    principal()
 </script>
