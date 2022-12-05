@@ -1,6 +1,7 @@
 <html>
     <head><meta charset="UTF-8"></head>
     <h1>Usando método fetch para requisição assíncronas em JavaScript</h1>
+    <div id="mensagem"></div>
     <div id="dados"></div>
 </html>
 <script>
@@ -10,4 +11,5 @@
         document.querySelector("#dados").innerHTML = JSON.stringify(object);
     }
     request()
+    document.querySelector("#mensagem").innerHTML = "<h1>Dados obtidos do servidor!</h2>"
 </script>
